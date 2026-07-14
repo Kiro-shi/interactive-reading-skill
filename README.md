@@ -2,6 +2,28 @@
 
 Codex skill for turning books, chapters, papers, courses, transcripts, meeting notes, and other static material into an interactive mastery workflow.
 
+## Reading Flow
+
+```mermaid
+flowchart TD
+    A["Reading Material<br/>book, chapter, paper, course, notes"] --> B["1. Diagnose Goal<br/>What do you want to understand, decide, create, or apply?"]
+    B --> C["2. Source Intake<br/>What is available, missing, reliable, or only partial?"]
+    C --> D["3. Core Extraction<br/>central question, thesis, concepts, argument, examples, blind spots"]
+    D --> E["4. Numbered Skeleton<br/>stable sections, claims, concepts, methods, examples"]
+    E --> F["5. Learning Map<br/>must / useful / optional / skip"]
+    F --> G["6. Interactive Study Loop"]
+
+    G --> H["Active Recall<br/>answer before seeing explanation"]
+    H --> I["Socratic Questions<br/>define, distinguish, prove, challenge, apply"]
+    I --> J["Mastery Check<br/>restate, example, counterexample, transfer"]
+    J --> K{"Mastered?"}
+    K -- "not yet" --> L["Lower difficulty<br/>reframe, hint, ask from another angle"]
+    L --> G
+    K -- "yes" --> M["7. Compression<br/>one-sentence thesis, one-page brief, 10 ideas, concept table"]
+    M --> N["8. Output Artifacts<br/>study map, flashcards, chapter brief, project note, final reading note"]
+    N --> O["9. Review Pack<br/>weak points, recall questions, next action, knowledge-base handoff"]
+```
+
 ## Why This Skill Is Useful
 
 Most reading workflows stop at summaries. This skill is built for mastery: it helps an agent turn static material into a guided learning process with diagnosis, structure, questioning, application, compression, and review.
