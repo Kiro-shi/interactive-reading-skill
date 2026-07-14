@@ -1,0 +1,4 @@
+interface:
+  display_name: "交互式读书"
+  short_description: "把书拆成核心提取、掌握训练、压缩输出和复习闭环"
+  default_prompt: "Use $interactive-reading to turn this book or course material into an interactive mastery workflow."
